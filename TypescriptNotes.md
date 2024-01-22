@@ -10,3 +10,12 @@
     - you have to be more disciplined when writing your code, as it is static and not dynamic.
 - To make it simple
     - Typescript is great on medium to large projects as it can effectively catch common bugs and errors that you would normally need to check for in a dynamically typed language like JS.
+- To create a congifuration file
+    - run `tsc --init`
+    - common options:
+        - target - the version of JS you want to target (es2016 is default)
+        - module - 
+        - rootDir - default to './' but can be changed to a different head depending on your project
+        - outDir - default to './' and is the location transpiled code will be placed
+        - removeComments - removes all comments in TS code, which makes JS transpiled code shorter
+        - noEmitOnError - if you have any mistakes in your code, it will not generate a JS file
