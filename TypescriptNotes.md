@@ -1,0 +1,12 @@
+- What is Typescript?
+    - A programming language created by Microsoft to help with the shortcomings of basic Javascript.
+    - It is a Javascript language, so all JS files will work as TS files, but not vice versa.
+    - TS is statically-typed, unlike JS
+        - statically-typed means that we can declare a variable to be an integer, but can't later change it to a non-integer value. (ex: int number = 10 -> number = 'a' would not work in a statically typed language)
+    - to make it very basic... Typescript is Javascript with Type Checking
+- Drawbacks?
+    - there is always a compilation step involved. This process is called transpilation.
+        - run `tsc <filename>` in the terminal to compile your code
+    - you have to be more disciplined when writing your code, as it is static and not dynamic.
+- To make it simple
+    - Typescript is great on medium to large projects as it can effectively catch common bugs and errors that you would normally need to check for in a dynamically typed language like JS.
