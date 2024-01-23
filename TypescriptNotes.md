@@ -29,5 +29,5 @@
     - any - variable type that essentially turns the variable into a dynamic typed one (avoid when possible)
     - unknown
     - never
-    - enum
-    - tuple
+    - enum - represents a list of related constants. It essentially allows you to create a 'type'
+    - tuple - fixed length array where each element has a particular type (most commonly used with pairs of values)
