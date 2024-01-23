@@ -30,7 +30,7 @@
         - if you get error, a workaround is to instead use this code `"preLaunchTask": "npm: debug",` and add `  "scripts": {"debug": "tsc --sourcemap"}` under package.json
 - Typescript adds additional built-in functions:
     - any - variable type that essentially turns the variable into a dynamic typed one (avoid when possible)
-    - unknown
+    - unknown - similar to 'any' in that anything can be assigned to it, but 'unknown' can't be used by anything but itself, unlike 'any'
     - never
     - enum - represents a list of related constants. It essentially allows you to create a 'type'
     - tuple - fixed length array where each element has a particular type (most commonly used with pairs of values)
