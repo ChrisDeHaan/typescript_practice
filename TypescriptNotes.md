@@ -34,3 +34,6 @@
     - never
     - enum - represents a list of related constants. It essentially allows you to create a 'type'
     - tuple - fixed length array where each element has a particular type (most commonly used with pairs of values)
+    - union - when a value type can be multiple different options (ex: weight: number | string)
+    - intersection - a value type that is multiple different options at the same time (ex: weight: number & string)
+    - literal - a valuetype that is set that rejects any value not explicitly stated
