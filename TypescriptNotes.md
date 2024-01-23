@@ -20,7 +20,14 @@
         - removeComments - removes all comments in TS code, which makes JS transpiled code shorter
         - noEmitOnError - if you have any mistakes in your code, it will not generate a JS file
         - sourceMap - a file that specifices how each line of our TS code maps to our generated JS code
+        - noImplicityAny - compiler will no longer infer 'any' for variables without a declared value
 - Once you have a sourceMap, you can put stops in the code, select "Run and Debug" in left menu, select "create a launch.json file", and select node.js. This will create a launch.json file
     - Add an additional code under "program" `"preLaunchTask": "tsc: build - tsconfig.json"`
     - What we're telling it to do with that code is to use the typescript compiler to build our application using the tsconfig.json file.
         - if you get error, a workaround is to instead use this code `"preLaunchTask": "npm: debug",` and add `  "scripts": {"debug": "tsc --sourcemap"}` under package.json
+- Typescript adds additional built-in functions:
+    - any - variable type that essentially turns the variable into a dynamic typed one (avoid when possible)
+    - unknown
+    - never
+    - enum
+    - tuple
