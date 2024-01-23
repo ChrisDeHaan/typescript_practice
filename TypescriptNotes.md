@@ -21,6 +21,9 @@
         - noEmitOnError - if you have any mistakes in your code, it will not generate a JS file
         - sourceMap - a file that specifices how each line of our TS code maps to our generated JS code
         - noImplicityAny - compiler will no longer infer 'any' for variables without a declared value
+        - noUnusedParameters - checks for any unused parameters
+        - noImplicitReturns - does not allow TS to infer return types
+        - noUnusedLocals - checks for any unused local variables
 - Once you have a sourceMap, you can put stops in the code, select "Run and Debug" in left menu, select "create a launch.json file", and select node.js. This will create a launch.json file
     - Add an additional code under "program" `"preLaunchTask": "tsc: build - tsconfig.json"`
     - What we're telling it to do with that code is to use the typescript compiler to build our application using the tsconfig.json file.
